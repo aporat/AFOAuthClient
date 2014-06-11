@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		531B42DC1947F2AA007875A5 /* AFOAuth2ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B42DB1947F2AA007875A5 /* AFOAuth2ServerViewController.m */; };
+		5372DBFC19380E9D002D760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372DBFB19380E9D002D760D /* Foundation.framework */; };
+		5372DC0119380E9D002D760D /* AFOAuthClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5372DC0019380E9D002D760D /* AFOAuthClient.h */; };
+		5372DC0A19380E9D002D760D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372DC0919380E9D002D760D /* XCTest.framework */; };
+		5372DC0B19380E9D002D760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372DBFB19380E9D002D760D /* Foundation.framework */; };
+		5372DC0D19380E9D002D760D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372DC0C19380E9D002D760D /* UIKit.framework */; };
+		5372DC1019380E9D002D760D /* libAFOAuthClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372DBF819380E9D002D760D /* libAFOAuthClient.a */; };
+		5372DC1619380E9D002D760D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5372DC1419380E9D002D760D /* InfoPlist.strings */; };
+		5372DC1819380E9D002D760D /* AFOAuthClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5372DC1719380E9D002D760D /* AFOAuthClientTests.m */; };
+		5372DC78193811D9002D760D /* AFOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5372DC77193811D9002D760D /* AFOAuthViewController.m */; };
+		53951BCB193976B70016AC00 /* AFOAuth2ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53951BCA193976B70016AC00 /* AFOAuth2ClientViewController.m */; };
+		53951BCE193977AF0016AC00 /* AFInstagramLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53951BCD193977AF0016AC00 /* AFInstagramLoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5372DC0E19380E9D002D760D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5372DBF019380E9D002D760D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5372DBF719380E9D002D760D;
+			remoteInfo = AFOAuthClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5372DBF619380E9D002D760D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5372DC0119380E9D002D760D /* AFOAuthClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		531B42DA1947F2AA007875A5 /* AFOAuth2ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2ServerViewController.h; sourceTree = "<group>"; };
+		531B42DB1947F2AA007875A5 /* AFOAuth2ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2ServerViewController.m; sourceTree = "<group>"; };
+		5372DBF819380E9D002D760D /* libAFOAuthClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFOAuthClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5372DBFB19380E9D002D760D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5372DBFF19380E9D002D760D /* AFOAuthClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFOAuthClient-Prefix.pch"; sourceTree = "<group>"; };
+		5372DC0019380E9D002D760D /* AFOAuthClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFOAuthClient.h; sourceTree = "<group>"; };
+		5372DC0819380E9D002D760D /* AFOAuthClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFOAuthClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5372DC0919380E9D002D760D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5372DC0C19380E9D002D760D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5372DC1319380E9D002D760D /* AFOAuthClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFOAuthClientTests-Info.plist"; sourceTree = "<group>"; };
+		5372DC1519380E9D002D760D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5372DC1719380E9D002D760D /* AFOAuthClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFOAuthClientTests.m; sourceTree = "<group>"; };
+		5372DC76193811D9002D760D /* AFOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuthViewController.h; sourceTree = "<group>"; };
+		5372DC77193811D9002D760D /* AFOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuthViewController.m; sourceTree = "<group>"; };
+		53951BC9193976B70016AC00 /* AFOAuth2ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2ClientViewController.h; sourceTree = "<group>"; };
+		53951BCA193976B70016AC00 /* AFOAuth2ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2ClientViewController.m; sourceTree = "<group>"; };
+		53951BCC193977AF0016AC00 /* AFInstagramClientLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFInstagramClientLoginViewController.h; sourceTree = "<group>"; };
+		53951BCD193977AF0016AC00 /* AFInstagramLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFInstagramLoginViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5372DBF519380E9D002D760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372DBFC19380E9D002D760D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372DC0519380E9D002D760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372DC0A19380E9D002D760D /* XCTest.framework in Frameworks */,
+				5372DC0D19380E9D002D760D /* UIKit.framework in Frameworks */,
+				5372DC0B19380E9D002D760D /* Foundation.framework in Frameworks */,
+				5372DC1019380E9D002D760D /* libAFOAuthClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5372DBEF19380E9D002D760D = {
+			isa = PBXGroup;
+			children = (
+				5372DBFD19380E9D002D760D /* AFOAuthClient */,
+				5372DC1119380E9D002D760D /* AFOAuthClientTests */,
+				5372DBFA19380E9D002D760D /* Frameworks */,
+				5372DBF919380E9D002D760D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5372DBF919380E9D002D760D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5372DBF819380E9D002D760D /* libAFOAuthClient.a */,
+				5372DC0819380E9D002D760D /* AFOAuthClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5372DBFA19380E9D002D760D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5372DBFB19380E9D002D760D /* Foundation.framework */,
+				5372DC0919380E9D002D760D /* XCTest.framework */,
+				5372DC0C19380E9D002D760D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5372DBFD19380E9D002D760D /* AFOAuthClient */ = {
+			isa = PBXGroup;
+			children = (
+				5372DC0019380E9D002D760D /* AFOAuthClient.h */,
+				5372DC76193811D9002D760D /* AFOAuthViewController.h */,
+				5372DC77193811D9002D760D /* AFOAuthViewController.m */,
+				53951BC9193976B70016AC00 /* AFOAuth2ClientViewController.h */,
+				53951BCA193976B70016AC00 /* AFOAuth2ClientViewController.m */,
+				53951BCC193977AF0016AC00 /* AFInstagramClientLoginViewController.h */,
+				53951BCD193977AF0016AC00 /* AFInstagramLoginViewController.m */,
+				531B42DA1947F2AA007875A5 /* AFOAuth2ServerViewController.h */,
+				531B42DB1947F2AA007875A5 /* AFOAuth2ServerViewController.m */,
+				5372DBFE19380E9D002D760D /* Supporting Files */,
+			);
+			path = AFOAuthClient;
+			sourceTree = "<group>";
+		};
+		5372DBFE19380E9D002D760D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5372DBFF19380E9D002D760D /* AFOAuthClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5372DC1119380E9D002D760D /* AFOAuthClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				5372DC1719380E9D002D760D /* AFOAuthClientTests.m */,
+				5372DC1219380E9D002D760D /* Supporting Files */,
+			);
+			path = AFOAuthClientTests;
+			sourceTree = "<group>";
+		};
+		5372DC1219380E9D002D760D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5372DC1319380E9D002D760D /* AFOAuthClientTests-Info.plist */,
+				5372DC1419380E9D002D760D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5372DBF719380E9D002D760D /* AFOAuthClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5372DC1B19380E9D002D760D /* Build configuration list for PBXNativeTarget "AFOAuthClient" */;
+			buildPhases = (
+				5372DBF419380E9D002D760D /* Sources */,
+				5372DBF519380E9D002D760D /* Frameworks */,
+				5372DBF619380E9D002D760D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFOAuthClient;
+			productName = AFOAuthClient;
+			productReference = 5372DBF819380E9D002D760D /* libAFOAuthClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5372DC0719380E9D002D760D /* AFOAuthClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5372DC1E19380E9D002D760D /* Build configuration list for PBXNativeTarget "AFOAuthClientTests" */;
+			buildPhases = (
+				5372DC0419380E9D002D760D /* Sources */,
+				5372DC0519380E9D002D760D /* Frameworks */,
+				5372DC0619380E9D002D760D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5372DC0F19380E9D002D760D /* PBXTargetDependency */,
+			);
+			name = AFOAuthClientTests;
+			productName = AFOAuthClientTests;
+			productReference = 5372DC0819380E9D002D760D /* AFOAuthClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5372DBF019380E9D002D760D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Adar Porat";
+			};
+			buildConfigurationList = 5372DBF319380E9D002D760D /* Build configuration list for PBXProject "AFOAuthClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5372DBEF19380E9D002D760D;
+			productRefGroup = 5372DBF919380E9D002D760D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5372DBF719380E9D002D760D /* AFOAuthClient */,
+				5372DC0719380E9D002D760D /* AFOAuthClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5372DC0619380E9D002D760D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372DC1619380E9D002D760D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5372DBF419380E9D002D760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53951BCE193977AF0016AC00 /* AFInstagramLoginViewController.m in Sources */,
+				531B42DC1947F2AA007875A5 /* AFOAuth2ServerViewController.m in Sources */,
+				53951BCB193976B70016AC00 /* AFOAuth2ClientViewController.m in Sources */,
+				5372DC78193811D9002D760D /* AFOAuthViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5372DC0419380E9D002D760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5372DC1819380E9D002D760D /* AFOAuthClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5372DC0F19380E9D002D760D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5372DBF719380E9D002D760D /* AFOAuthClient */;
+			targetProxy = 5372DC0E19380E9D002D760D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5372DC1419380E9D002D760D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5372DC1519380E9D002D760D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5372DC1919380E9D002D760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5372DC1A19380E9D002D760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5372DC1C19380E9D002D760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AFOAuthClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFOAuthClient/AFOAuthClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5372DC1D19380E9D002D760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/AFOAuthClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFOAuthClient/AFOAuthClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5372DC1F19380E9D002D760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFOAuthClient/AFOAuthClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AFOAuthClientTests/AFOAuthClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5372DC2019380E9D002D760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AFOAuthClient/AFOAuthClient-Prefix.pch";
+				INFOPLIST_FILE = "AFOAuthClientTests/AFOAuthClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5372DBF319380E9D002D760D /* Build configuration list for PBXProject "AFOAuthClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5372DC1919380E9D002D760D /* Debug */,
+				5372DC1A19380E9D002D760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5372DC1B19380E9D002D760D /* Build configuration list for PBXNativeTarget "AFOAuthClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5372DC1C19380E9D002D760D /* Debug */,
+				5372DC1D19380E9D002D760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5372DC1E19380E9D002D760D /* Build configuration list for PBXNativeTarget "AFOAuthClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5372DC1F19380E9D002D760D /* Debug */,
+				5372DC2019380E9D002D760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5372DBF019380E9D002D760D /* Project object */;
+}
