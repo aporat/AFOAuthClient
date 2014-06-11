@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		531B42DC1947F2AA007875A5 /* AFOAuth2ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B42DB1947F2AA007875A5 /* AFOAuth2ServerViewController.m */; };
+		531B42DC1947F2AA007875A5 /* AFOAuth2ExplicitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531B42DB1947F2AA007875A5 /* AFOAuth2ExplicitViewController.m */; };
 		5372DBFC19380E9D002D760D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372DBFB19380E9D002D760D /* Foundation.framework */; };
 		5372DC0119380E9D002D760D /* AFOAuthClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5372DC0019380E9D002D760D /* AFOAuthClient.h */; };
 		5372DC0A19380E9D002D760D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372DC0919380E9D002D760D /* XCTest.framework */; };
@@ -17,8 +17,8 @@
 		5372DC1619380E9D002D760D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5372DC1419380E9D002D760D /* InfoPlist.strings */; };
 		5372DC1819380E9D002D760D /* AFOAuthClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5372DC1719380E9D002D760D /* AFOAuthClientTests.m */; };
 		5372DC78193811D9002D760D /* AFOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5372DC77193811D9002D760D /* AFOAuthViewController.m */; };
-		53951BCB193976B70016AC00 /* AFOAuth2ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53951BCA193976B70016AC00 /* AFOAuth2ClientViewController.m */; };
-		53951BCE193977AF0016AC00 /* AFInstagramLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53951BCD193977AF0016AC00 /* AFInstagramLoginViewController.m */; };
+		53951BCB193976B70016AC00 /* AFOAuth2ImplicitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53951BCA193976B70016AC00 /* AFOAuth2ImplicitViewController.m */; };
+		53951BCE193977AF0016AC00 /* AFInstagramImplicitLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53951BCD193977AF0016AC00 /* AFInstagramImplicitLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		531B42DA1947F2AA007875A5 /* AFOAuth2ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2ServerViewController.h; sourceTree = "<group>"; };
-		531B42DB1947F2AA007875A5 /* AFOAuth2ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2ServerViewController.m; sourceTree = "<group>"; };
+		531B42DA1947F2AA007875A5 /* AFOAuth2ExplicitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2ExplicitViewController.h; sourceTree = "<group>"; };
+		531B42DB1947F2AA007875A5 /* AFOAuth2ExplicitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2ExplicitViewController.m; sourceTree = "<group>"; };
 		5372DBF819380E9D002D760D /* libAFOAuthClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFOAuthClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5372DBFB19380E9D002D760D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5372DBFF19380E9D002D760D /* AFOAuthClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFOAuthClient-Prefix.pch"; sourceTree = "<group>"; };
@@ -59,10 +59,10 @@
 		5372DC1719380E9D002D760D /* AFOAuthClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFOAuthClientTests.m; sourceTree = "<group>"; };
 		5372DC76193811D9002D760D /* AFOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuthViewController.h; sourceTree = "<group>"; };
 		5372DC77193811D9002D760D /* AFOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuthViewController.m; sourceTree = "<group>"; };
-		53951BC9193976B70016AC00 /* AFOAuth2ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2ClientViewController.h; sourceTree = "<group>"; };
-		53951BCA193976B70016AC00 /* AFOAuth2ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2ClientViewController.m; sourceTree = "<group>"; };
-		53951BCC193977AF0016AC00 /* AFInstagramClientLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFInstagramClientLoginViewController.h; sourceTree = "<group>"; };
-		53951BCD193977AF0016AC00 /* AFInstagramLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFInstagramLoginViewController.m; sourceTree = "<group>"; };
+		53951BC9193976B70016AC00 /* AFOAuth2ImplicitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOAuth2ImplicitViewController.h; sourceTree = "<group>"; };
+		53951BCA193976B70016AC00 /* AFOAuth2ImplicitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFOAuth2ImplicitViewController.m; sourceTree = "<group>"; };
+		53951BCC193977AF0016AC00 /* AFInstagramImplicitLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFInstagramImplicitLoginViewController.h; sourceTree = "<group>"; };
+		53951BCD193977AF0016AC00 /* AFInstagramImplicitLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFInstagramImplicitLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,12 +123,12 @@
 				5372DC0019380E9D002D760D /* AFOAuthClient.h */,
 				5372DC76193811D9002D760D /* AFOAuthViewController.h */,
 				5372DC77193811D9002D760D /* AFOAuthViewController.m */,
-				53951BC9193976B70016AC00 /* AFOAuth2ClientViewController.h */,
-				53951BCA193976B70016AC00 /* AFOAuth2ClientViewController.m */,
-				53951BCC193977AF0016AC00 /* AFInstagramClientLoginViewController.h */,
-				53951BCD193977AF0016AC00 /* AFInstagramLoginViewController.m */,
-				531B42DA1947F2AA007875A5 /* AFOAuth2ServerViewController.h */,
-				531B42DB1947F2AA007875A5 /* AFOAuth2ServerViewController.m */,
+				53951BC9193976B70016AC00 /* AFOAuth2ImplicitViewController.h */,
+				53951BCA193976B70016AC00 /* AFOAuth2ImplicitViewController.m */,
+				53951BCC193977AF0016AC00 /* AFInstagramImplicitLoginViewController.h */,
+				53951BCD193977AF0016AC00 /* AFInstagramImplicitLoginViewController.m */,
+				531B42DA1947F2AA007875A5 /* AFOAuth2ExplicitViewController.h */,
+				531B42DB1947F2AA007875A5 /* AFOAuth2ExplicitViewController.m */,
 				5372DBFE19380E9D002D760D /* Supporting Files */,
 			);
 			path = AFOAuthClient;
@@ -241,9 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53951BCE193977AF0016AC00 /* AFInstagramLoginViewController.m in Sources */,
-				531B42DC1947F2AA007875A5 /* AFOAuth2ServerViewController.m in Sources */,
-				53951BCB193976B70016AC00 /* AFOAuth2ClientViewController.m in Sources */,
+				53951BCE193977AF0016AC00 /* AFInstagramImplicitLoginViewController.m in Sources */,
+				531B42DC1947F2AA007875A5 /* AFOAuth2ExplicitViewController.m in Sources */,
+				53951BCB193976B70016AC00 /* AFOAuth2ImplicitViewController.m in Sources */,
 				5372DC78193811D9002D760D /* AFOAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,6 @@
 
 #import "AFOAuthViewController.h"
 
-@interface AFOAuth2ServerViewController : AFOAuthViewController
+@interface AFOAuth2ExplicitViewController : AFOAuthViewController
 
 @end

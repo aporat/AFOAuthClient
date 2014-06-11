@@ -14,15 +14,13 @@
 // limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
-#import <Availability.h>
+#import "AFOAuth2ExplicitViewController.h"
 
-#ifndef _AFOAUTHCLIENT_
-#define _AFOAUTHCLIENT_
+@interface AFOAuth2ExplicitViewController ()
 
-    #import "AFOAuthViewController.h"
-    #import "AFOAuth2ImplicitViewController.h"
-    #import "AFOAuth2ExplicitViewController.h"
-    #import "AFInstagramImplicitLoginViewController.h"
+@end
 
-#endif /* _AFOAUTHCLIENT_ */
+@implementation AFOAuth2ExplicitViewController
+
+
+@end

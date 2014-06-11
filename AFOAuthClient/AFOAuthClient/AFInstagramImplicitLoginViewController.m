@@ -14,10 +14,15 @@
 // limitations under the License.
 //
 
-#import "AFInstagramClientLoginViewController.h"
+#import "AFInstagramImplicitLoginViewController.h"
 
+@implementation AFInstagramImplicitLoginViewController
 
-@implementation AFInstagramClientLoginViewController
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.title = [NSString stringWithFormat:NSLocalizedString(@"Sign in to %@", @""), @"Instagram"];
+}
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     

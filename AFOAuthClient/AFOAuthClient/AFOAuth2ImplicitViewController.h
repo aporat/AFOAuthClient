@@ -16,7 +16,7 @@
 
 #import "AFOAuthViewController.h"
 
-@interface AFOAuth2ClientViewController : AFOAuthViewController
+@interface AFOAuth2ImplicitViewController : AFOAuthViewController
 
 + (instancetype)controllerWithAuthUri:(NSString *)authUri
                           redirectURI:(NSString *)redirectUri

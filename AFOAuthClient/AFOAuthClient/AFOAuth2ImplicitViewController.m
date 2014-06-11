@@ -14,9 +14,9 @@
 // limitations under the License.
 //
 
-#import "AFOAuth2ClientViewController.h"
+#import "AFOAuth2ImplicitViewController.h"
 
-@implementation AFOAuth2ClientViewController
+@implementation AFOAuth2ImplicitViewController
 
 + (instancetype)controllerWithAuthUri:(NSString *)authUri
                           redirectURI:(NSString *)redirectUri

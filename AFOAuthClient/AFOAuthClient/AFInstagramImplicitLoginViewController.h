@@ -14,8 +14,8 @@
 // limitations under the License.
 //
 
-#import "AFOAuth2ClientViewController.h"
+#import "AFOAuth2ImplicitViewController.h"
 
-@interface AFInstagramClientLoginViewController : AFOAuth2ClientViewController
+@interface AFInstagramImplicitLoginViewController : AFOAuth2ImplicitViewController
 
 @end
