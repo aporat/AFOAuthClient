@@ -25,3 +25,30 @@ Then run the following in the same directory as your Podfile:
 ```ruby
 pod install
 ```
+
+
+## Usage
+
+
+```objective-c
+    AFInstagramImplicitLoginViewController *vc = [AFInstagramImplicitLoginViewController controllerWithAuthUri:@"https://instagram.com/oauth/authorize"
+                                                                                                   redirectURI:@"redirect"
+                                                                                                      clientId:@""
+                                                                                                         scope:@"basic"
+                                                                                             completionHandler:^(NSDictionary *info, NSError *error) {
+                                                                                                 
+                                                                                                 
+                                                                                                 
+                                                                                             }];
+    
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+
+
+}
+
+@end
+```
+
