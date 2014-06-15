@@ -35,6 +35,7 @@
     self = [self initWithNibName:nil bundle:nil];
     if (self) {
         self.authUri = [NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@&response_type=token&scope=%@", authUri, clientId, redirectUri, scope];
+        
         self.redirectURI = [NSURL URLWithString:redirectUri];
         completionBlock_ = [handler copy];
     }

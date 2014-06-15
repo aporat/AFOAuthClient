@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BA21E6D9-C38D-484C-A6C6-3DEABBBBBC2E</string>
+	<string>949412ED-466D-4E92-B2D2-D582CCBEDF64</string>
 	<key>IDESourceControlProjectName</key>
 	<string>example</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>00226961-7C96-4971-ACCA-D6B395D81ABE</key>
+		<key>2F7246F5-CD02-4C00-B1F7-97E246AC39EE</key>
 		<string>ssh://github.com/aporat/AFOAuthClient.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>example/example/example.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>00226961-7C96-4971-ACCA-D6B395D81ABE</key>
+		<key>2F7246F5-CD02-4C00-B1F7-97E246AC39EE</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>00226961-7C96-4971-ACCA-D6B395D81ABE</string>
+	<string>2F7246F5-CD02-4C00-B1F7-97E246AC39EE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>00226961-7C96-4971-ACCA-D6B395D81ABE</string>
+			<string>2F7246F5-CD02-4C00-B1F7-97E246AC39EE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AFOAuthClient</string>
 		</dict>
