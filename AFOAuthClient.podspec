@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   
   s.platform = :ios, '6.0'
   s.requires_arc = true
-  s.source_files = 'src/*.{h,m}'
+  s.source_files = 'AFOAuthClient/AFOAuthClient/*.{h,m}'
   s.dependency 'AFNetworking', '~> 2'
 
 end
