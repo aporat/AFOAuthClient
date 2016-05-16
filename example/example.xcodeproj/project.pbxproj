@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,33 +16,8 @@
 		53E3197E194E483B00F32484 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E3197C194E483B00F32484 /* Main.storyboard */; };
 		53E31984194E483B00F32484 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E31983194E483B00F32484 /* ViewController.m */; };
 		53E31986194E483B00F32484 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53E31985194E483B00F32484 /* Images.xcassets */; };
-		53E319AD194E648900F32484 /* libAFOAuthClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E319A8194E647A00F32484 /* libAFOAuthClient.a */; };
-		5E388A85BD064D4F8DD01315 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 570BD4B2DBAD422BB4E70B39 /* libPods.a */; };
+		98374E627F6E978990103BCB /* Pods_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA9E6C003F7C62AFBCC21FB0 /* Pods_example.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		53E319A7194E647A00F32484 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53E319A2194E647A00F32484 /* AFOAuthClient.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5372DBF819380E9D002D760D;
-			remoteInfo = AFOAuthClient;
-		};
-		53E319A9194E647A00F32484 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53E319A2194E647A00F32484 /* AFOAuthClient.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5372DC0819380E9D002D760D;
-			remoteInfo = AFOAuthClientTests;
-		};
-		53E319AB194E648400F32484 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53E319A2194E647A00F32484 /* AFOAuthClient.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5372DBF719380E9D002D760D;
-			remoteInfo = AFOAuthClient;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		53E31967194E483B00F32484 /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,9 +35,9 @@
 		53E31983194E483B00F32484 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		53E31985194E483B00F32484 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		53E3198C194E483B00F32484 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		53E319A2194E647A00F32484 /* AFOAuthClient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AFOAuthClient.xcodeproj; path = ../AFOAuthClient/AFOAuthClient.xcodeproj; sourceTree = "<group>"; };
-		570BD4B2DBAD422BB4E70B39 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59C3BC41D9D47BB8AFB688D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		9D4FE752B87FD7D1553BA7DF /* Pods-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.release.xcconfig"; sourceTree = "<group>"; };
+		A14AA6ACA77659D4C01FA052 /* Pods-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-example/Pods-example.debug.xcconfig"; sourceTree = "<group>"; };
+		CA9E6C003F7C62AFBCC21FB0 /* Pods_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,24 +45,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53E319AD194E648900F32484 /* libAFOAuthClient.a in Frameworks */,
 				53E3196D194E483B00F32484 /* CoreGraphics.framework in Frameworks */,
 				53E3196F194E483B00F32484 /* UIKit.framework in Frameworks */,
 				53E3196B194E483B00F32484 /* Foundation.framework in Frameworks */,
-				5E388A85BD064D4F8DD01315 /* libPods.a in Frameworks */,
+				98374E627F6E978990103BCB /* Pods_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E984302D25CA3F9D0FC4807 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A14AA6ACA77659D4C01FA052 /* Pods-example.debug.xcconfig */,
+				9D4FE752B87FD7D1553BA7DF /* Pods-example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		53E3195E194E483B00F32484 = {
 			isa = PBXGroup;
 			children = (
 				53E31970194E483B00F32484 /* example */,
 				53E31969194E483B00F32484 /* Frameworks */,
 				53E31968194E483B00F32484 /* Products */,
-				A59C3BC41D9D47BB8AFB688D /* Pods.xcconfig */,
+				4E984302D25CA3F9D0FC4807 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,12 +85,11 @@
 		53E31969194E483B00F32484 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				53E319A2194E647A00F32484 /* AFOAuthClient.xcodeproj */,
 				53E3196A194E483B00F32484 /* Foundation.framework */,
 				53E3196C194E483B00F32484 /* CoreGraphics.framework */,
 				53E3196E194E483B00F32484 /* UIKit.framework */,
 				53E3198C194E483B00F32484 /* XCTest.framework */,
-				570BD4B2DBAD422BB4E70B39 /* libPods.a */,
+				CA9E6C003F7C62AFBCC21FB0 /* Pods_example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,15 +119,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		53E319A3194E647A00F32484 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				53E319A8194E647A00F32484 /* libAFOAuthClient.a */,
-				53E319AA194E647A00F32484 /* AFOAuthClientTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,16 +126,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53E3199C194E483B00F32484 /* Build configuration list for PBXNativeTarget "example" */;
 			buildPhases = (
-				147C249ADB6F400AB72499BD /* Check Pods Manifest.lock */,
+				2B15EEDB7B4BC01A70071B5D /* 📦 Check Pods Manifest.lock */,
 				53E31963194E483B00F32484 /* Sources */,
 				53E31964194E483B00F32484 /* Frameworks */,
 				53E31965194E483B00F32484 /* Resources */,
-				FE83ADE716774999A7437075 /* Copy Pods Resources */,
+				9F2DA07FDFB04CD9F016298E /* 📦 Embed Pods Frameworks */,
+				525973AE54E5655194E377EF /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				53E319AC194E648400F32484 /* PBXTargetDependency */,
 			);
 			name = example;
 			productName = example;
@@ -175,11 +148,11 @@
 		53E3195F194E483B00F32484 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Adar Porat";
 			};
 			buildConfigurationList = 53E31962194E483B00F32484 /* Build configuration list for PBXProject "example" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -189,35 +162,12 @@
 			mainGroup = 53E3195E194E483B00F32484;
 			productRefGroup = 53E31968194E483B00F32484 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 53E319A3194E647A00F32484 /* Products */;
-					ProjectRef = 53E319A2194E647A00F32484 /* AFOAuthClient.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				53E31966194E483B00F32484 /* example */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		53E319A8194E647A00F32484 /* libAFOAuthClient.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAFOAuthClient.a;
-			remoteRef = 53E319A7194E647A00F32484 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		53E319AA194E647A00F32484 /* AFOAuthClientTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = AFOAuthClientTests.xctest;
-			remoteRef = 53E319A9194E647A00F32484 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		53E31965194E483B00F32484 /* Resources */ = {
@@ -233,14 +183,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		147C249ADB6F400AB72499BD /* Check Pods Manifest.lock */ = {
+		2B15EEDB7B4BC01A70071B5D /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,19 +198,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FE83ADE716774999A7437075 /* Copy Pods Resources */ = {
+		525973AE54E5655194E377EF /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-example/Pods-example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F2DA07FDFB04CD9F016298E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-example/Pods-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -277,14 +242,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		53E319AC194E648400F32484 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFOAuthClient;
-			targetProxy = 53E319AB194E648400F32484 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53E31973194E483B00F32484 /* InfoPlist.strings */ = {
@@ -324,6 +281,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -338,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -380,13 +338,14 @@
 		};
 		53E3199D194E483B00F32484 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A59C3BC41D9D47BB8AFB688D /* Pods.xcconfig */;
+			baseConfigurationReference = A14AA6ACA77659D4C01FA052 /* Pods-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
 				INFOPLIST_FILE = "example/example-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "adarporat.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../AFOAuthClient/AFOAuthClient\"/**";
 				WRAPPER_EXTENSION = app;
@@ -395,13 +354,14 @@
 		};
 		53E3199E194E483B00F32484 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A59C3BC41D9D47BB8AFB688D /* Pods.xcconfig */;
+			baseConfigurationReference = 9D4FE752B87FD7D1553BA7DF /* Pods-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "example/example-Prefix.pch";
 				INFOPLIST_FILE = "example/example-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "adarporat.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../AFOAuthClient/AFOAuthClient\"/**";
 				WRAPPER_EXTENSION = app;

@@ -1,5 +1,5 @@
 //
-// Copyright 2011-2014 Adar Porat (https://github.com/aporat)
+// Copyright 2011-2015 Adar Porat (https://github.com/aporat)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,16 +16,11 @@
 
 #import "AFOAuthViewController.h"
 
-@interface AFOAuth2ImplicitViewController : AFOAuthViewController
+@interface AFOAuth1ViewController : AFOAuthViewController
 
-+ (instancetype)controllerWithAuthUri:(NSString *)authUri
-                          redirectURI:(NSString *)redirectUri
-                             clientId:(NSString *)clientId
-                                scope:(NSString *)scope
-                    completionHandler:(void (^)(NSDictionary *info, NSError *error))handler;
++ (instancetype _Nonnull)controllerWithAuthURL:(NSURL * __nullable)authUrl
+                                    redirectURL:(NSURL * __nullable)redirectUrl
+                              completionHandler:(void (^ __nullable)(BOOL success, NSError * __nullable error, NSDictionary<NSString *, id> *__nullable info))handler;
 
-
-@property (nonatomic, strong) NSString *authUri;
-@property (nonatomic, strong) NSURL *redirectURI;
 
 @end

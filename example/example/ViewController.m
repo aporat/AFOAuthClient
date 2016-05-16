@@ -7,11 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "AFOAuthClient.h"
-
-@interface ViewController ()
-
-@end
+#import <AFOAuthClient/AFOAuthClient.h>
 
 @implementation ViewController
 
@@ -22,28 +18,15 @@
 }
 
 - (IBAction)loginWithInstagram:(id)sender {
-    AFInstagramImplicitLoginViewController *vc = [AFInstagramImplicitLoginViewController controllerWithAuthUri:@"https://instagram.com/oauth/authorize"
-                                                                                                   redirectURI:@"redirect"
-                                                                                                      clientId:@""
-                                                                                                         scope:@"basic"
-                                                                                             completionHandler:^(NSDictionary *info, NSError *error) {
-                                                                                                 
-                                                                                                 
-                                                                                                 
-                                                                                             }];
+  
+  AFOInstagramImplicitLoginViewController *vc = [AFOInstagramImplicitLoginViewController controllerWithAuthURL:[NSURL URLWithString:@"https://instagram.com/oauth/authorize"] redirectURL:[NSURL URLWithString:@"login://redirect"] clientId:@"" scope:@"basic" completionHandler:^(BOOL success, NSError * _Nullable error, NSDictionary<NSString *,id> * _Nullable info) {
     
-    
+  }];
+  
+  
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     
     [self presentViewController:nav animated:YES completion:nil];
-    
-    
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

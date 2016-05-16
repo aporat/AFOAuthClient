@@ -1,5 +1,5 @@
 //
-// Copyright 2011-2014 Adar Porat (https://github.com/aporat)
+// Copyright 2011-2015 Adar Porat (https://github.com/aporat)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,8 +14,12 @@
 // limitations under the License.
 //
 
-#import "AFOAuth2ImplicitViewController.h"
+#import <Foundation/Foundation.h>
 
-@interface AFInstagramImplicitLoginViewController : AFOAuth2ImplicitViewController
+@interface NSDictionary (AFOAuthClient)
+
++ (instancetype)af_dictionaryFromQueryString:(NSString *)queryString;
+- (NSString *)af_queryStringRepresentation;
++ (instancetype)af_dictionaryFromURL:(NSURL *)url;
 
 @end

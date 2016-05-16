@@ -1,5 +1,5 @@
 //
-// Copyright 2011-2014 Adar Porat (https://github.com/aporat)
+// Copyright 2011-2015 Adar Porat (https://github.com/aporat)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,17 +14,8 @@
 // limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+#import "AFOAuth2ImplicitViewController.h"
 
-@interface AFOAuthViewController : UIViewController <UIWebViewDelegate> {
-    void (^completionBlock_)(NSDictionary *, NSError *);
-}
-
-@property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
-@property (nonatomic, strong) UIWebView *webView;
-@property (nonatomic, strong) NSURL *loginUrl;
-@property (nonatomic, strong) NSString *initialHTMLString;
-
-+ (instancetype)controllerWithCompletionHandler:(void (^)(NSDictionary *info, NSError *error))handler;
+@interface AFOInstagramImplicitLoginViewController : AFOAuth2ImplicitViewController
 
 @end

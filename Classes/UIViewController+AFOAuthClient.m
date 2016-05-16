@@ -1,5 +1,5 @@
 //
-// Copyright 2011-2014 Adar Porat (https://github.com/aporat)
+// Copyright 2011-2015 Adar Porat (https://github.com/aporat)
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,13 +14,16 @@
 // limitations under the License.
 //
 
-#import "AFOAuth2ExplicitViewController.h"
+#import "UIViewController+AFOAuthClient.h"
 
-@interface AFOAuth2ExplicitViewController ()
+@implementation UIViewController (AFOAuthClient)
 
-@end
+- (IBAction)af_dismiss:(id)sender {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
 
-@implementation AFOAuth2ExplicitViewController
-
+- (IBAction)af_pop:(id)sender {
+  [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end
