@@ -75,7 +75,7 @@
 }
 
 - (void)dismissAnimated:(id)sender {
-  _completionBlock(NO, nil, nil);
+  if (_completionBlock != nil) { _completionBlock(NO, nil, nil); }
   
   dispatch_async(dispatch_get_main_queue(), ^{
     [self dismissViewControllerAnimated:YES completion:nil];
