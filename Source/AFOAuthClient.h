@@ -14,8 +14,8 @@
 // limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
-#import <Availability.h>
+@import Foundation;
+@import AFNetworking;
 
 #ifndef _AFOAUTHCLIENT_
 #define _AFOAUTHCLIENT_

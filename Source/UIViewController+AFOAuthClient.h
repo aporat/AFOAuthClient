@@ -14,6 +14,8 @@
 // limitations under the License.
 //
 
+@import UIKit;
+
 @interface UIViewController (AFOAuthClient)
 
 - (IBAction)af_dismiss:(id)sender;
