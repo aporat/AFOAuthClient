@@ -15,6 +15,7 @@
 //
 
 @import Foundation;
+@import UIKit;
 @import AFNetworking;
 
 #ifndef _AFOAUTHCLIENT_

@@ -14,8 +14,6 @@
 // limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface AFOAuthViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic, strong) void (^ __nullable completionBlock)(BOOL success, NSError * __nullable error, NSDictionary<NSString *, id> *__nullable info);

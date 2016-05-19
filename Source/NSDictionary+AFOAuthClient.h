@@ -14,8 +14,6 @@
 // limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface NSDictionary (AFOAuthClient)
 
 + (instancetype)af_dictionaryFromQueryString:(NSString *)queryString;

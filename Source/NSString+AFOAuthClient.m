@@ -15,7 +15,6 @@
 //
 
 #import "NSString+AFOAuthClient.h"
-#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (AFOAuthClient)
 
