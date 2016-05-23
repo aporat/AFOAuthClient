@@ -24,7 +24,7 @@
   NSString *html = [webView stringByEvaluatingJavaScriptFromString: @"document.body.innerHTML"];
   
   if ([html isEqualToString:@"Forbidden"]) {
-    NSError *error = [[NSError alloc] initWithDomain:@"OAuth2Domain" code:10 userInfo:@{NSLocalizedDescriptionKey: @"Instagram has recently added a checkpoint to their app to confirm that you’re a human and not a bot. To get past this, you’ll have to login to the real instagram app and share/like a photo. After you do that, you should be able to access all your 3rd party apps again."}];
+    NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:10 userInfo:@{NSLocalizedDescriptionKey: @"Instagram has recently added a checkpoint to their app to confirm that you’re a human and not a bot. To get past this, you’ll have to login to the real instagram app and share/like a photo. After you do that, you should be able to access all your 3rd party apps again."}];
     self.completionBlock(NO, error, nil);
     
     [self dismissViewControllerAnimated:YES completion:nil];

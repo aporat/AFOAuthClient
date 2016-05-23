@@ -60,7 +60,7 @@
             errorMessage = result[@"error"];
           }
           
-          NSError *error = [[NSError alloc] initWithDomain:@"OAuth2Domain" code:11 userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
+          NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:AFOAuthCodeLoginFailed userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
           self.completionBlock(NO, error, nil);
           [self dismissViewControllerAnimated:YES completion:nil];
           

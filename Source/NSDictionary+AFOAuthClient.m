@@ -17,7 +17,6 @@
 #import "NSDictionary+AFOAuthClient.h"
 #import "NSString+AFOAuthClient.h"
 
-#pragma mark -
 @implementation NSDictionary (AFOAuthClient)
 
 #pragma mark Query String

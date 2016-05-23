@@ -39,9 +39,6 @@
   if (self) {
     self.authUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@&response_type=code&scope=%@", authUrl.absoluteString, clientId, redirectUrl.absoluteString, scope]];
     
-    // DDLogDebug(@"loading %@", self.authUrl);
-    // DDLogDebug(@"loginRedirectURI %@", loginRedirectUri);
-    
     self.loginRedirectURL = loginRedirectUrl;
     self.completionBlock = [handler copy];
   }
@@ -55,7 +52,7 @@
   
   //  DDLogDebug(@"got url %@. login redirect url is %@", request.URL.absoluteString, self.loginRedirectURI.absoluteString);
   
-  if (request.URL!=nil) {
+  if (request.URL != nil) {
     
     if ([request.URL.absoluteString hasPrefix:self.loginRedirectURL.absoluteString] || [request.URL.absoluteString hasPrefix:@"followers://callback"]) {
       
@@ -65,7 +62,7 @@
           NSDictionary *result = [NSDictionary af_dictionaryFromURL:request.URL];
           
           NSString *errorMessage = @"Unable to login. try again later.";
-          if (result[@"meta"] != nil && result[@"meta"][@"error_message"]!=nil) {
+          if (result[@"meta"] != nil && result[@"meta"][@"error_message"] != nil) {
             errorMessage = result[@"meta"][@"error_message"];
           } else if (result[@"error_message"]!=nil) {
             errorMessage = result[@"error_message"];
@@ -73,7 +70,7 @@
             errorMessage = result[@"error"];
           }
           
-          NSError *error = [[NSError alloc] initWithDomain:@"OAuth2Domain" code:11 userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
+          NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:AFOAuthCodeLoginFailed userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
           self.completionBlock(NO, error, nil);
           [self dismissViewControllerAnimated:YES completion:nil];
           

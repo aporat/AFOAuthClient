@@ -17,6 +17,8 @@
 @import UIKit;
 
 extern NSString * __nonnull const AFOAuthErrorDomain;
+
+extern NSInteger const AFOAuthCodeLoginFailed;
 extern NSInteger const AFOAuthErrorCodeLoginCanceled;
 
 @interface AFOAuthViewController : UIViewController <UIWebViewDelegate>

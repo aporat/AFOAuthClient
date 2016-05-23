@@ -17,7 +17,10 @@
 #import "AFOAuthViewController.h"
 
 NSString *const AFOAuthErrorDomain = @"com.afoauthclient";
-NSInteger const AFOAuthErrorCodeLoginCanceled = 300;
+
+NSInteger const AFOAuthCodeLoginFailed = 200;
+NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
+
 
 
 @implementation AFOAuthViewController
@@ -118,7 +121,7 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = 300;
     }
     
     if (errorMessage != nil) {
-      NSError *error = [[NSError alloc] initWithDomain:@"OAuth1Domain" code:10 userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
+      NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:AFOAuthCodeLoginFailed userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
       self.completionBlock(NO, error, nil);
       [self dismissViewControllerAnimated:YES completion:nil];
       

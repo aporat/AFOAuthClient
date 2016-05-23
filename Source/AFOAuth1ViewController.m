@@ -48,7 +48,7 @@
       
       if ([request.URL.absoluteString rangeOfString:@"error"].location != NSNotFound) {
         dispatch_async(dispatch_get_main_queue(), ^{
-          NSError *error = [[NSError alloc] initWithDomain:@"OAuth1Domain" code:11 userInfo:@{NSLocalizedDescriptionKey: @"Unable to login to service. try again later."}];
+          NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:AFOAuthCodeLoginFailed userInfo:@{NSLocalizedDescriptionKey: @"Unable to login to service. try again later."}];
           self.completionBlock(NO, error, nil);
           [self dismissViewControllerAnimated:YES completion:nil];
           
