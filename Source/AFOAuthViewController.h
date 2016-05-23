@@ -16,6 +16,9 @@
 
 @import UIKit;
 
+extern NSString * __nonnull const AFOAuthErrorDomain;
+extern NSInteger const AFOAuthErrorCodeLoginCanceled;
+
 @interface AFOAuthViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic, strong) void (^ __nullable completionBlock)(BOOL success, NSError * __nullable error, NSDictionary<NSString *, id> *__nullable info);

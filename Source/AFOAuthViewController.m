@@ -16,6 +16,10 @@
 
 #import "AFOAuthViewController.h"
 
+NSString *const AFOAuthErrorDomain = @"com.afoauthclient";
+NSInteger const AFOAuthErrorCodeLoginCanceled = 300;
+
+
 @implementation AFOAuthViewController
 
 + (instancetype)controllerWithCompletionClosure:(void (^)(BOOL success, NSError *error, NSDictionary<NSString *, id> *info))handler {
@@ -75,7 +79,8 @@
 }
 
 - (void)dismissAnimated:(id)sender {
-  if (_completionBlock != nil) { _completionBlock(NO, nil, nil); }
+  NSError *error = [NSError errorWithDomain:AFOAuthErrorDomain code:AFOAuthErrorCodeLoginCanceled userInfo:nil];
+  if (_completionBlock != nil) { _completionBlock(NO, error, nil); }
   
   dispatch_async(dispatch_get_main_queue(), ^{
     [self dismissViewControllerAnimated:YES completion:nil];
