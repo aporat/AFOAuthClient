@@ -24,8 +24,8 @@ extern NSInteger const AFOAuthErrorCodeLoginCanceled;
 @interface AFOAuthViewController : UIViewController <UIWebViewDelegate>
 
 @property (nonatomic, strong) void (^ __nullable completionBlock)(BOOL success, NSError * __nullable error, NSDictionary<NSString *, id> *__nullable info);
-@property (nonatomic, strong) UIActivityIndicatorView * __nullable activityIndicator;
-@property (nonatomic, strong, nullable) UIWebView * webView;
+@property (nonatomic, strong, nonnull) UIActivityIndicatorView * activityIndicator;
+@property (nonatomic, strong, nonnull) UIWebView * webView;
 @property (nonatomic, strong, nonnull) NSURL * authUrl;
 @property (nonatomic, strong, nonnull) NSURL *redirectURL;
 @property (nonatomic, assign) BOOL isBarStyleLight;

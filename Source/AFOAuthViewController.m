@@ -21,8 +21,6 @@ NSString *const AFOAuthErrorDomain = @"com.afoauthclient";
 NSInteger const AFOAuthCodeLoginFailed = 200;
 NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
 
-
-
 @implementation AFOAuthViewController
 
 + (instancetype)controllerWithCompletionClosure:(void (^)(BOOL success, NSError *error, NSDictionary<NSString *, id> *info))handler {
@@ -44,12 +42,9 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
   
   self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissAnimated:)];
   
-  CGRect frame = CGRectMake(0.0, 0.0, 25.0, 25.0);
-  self.activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:frame];
+  self.activityIndicator.frame = CGRectMake(0.0, 0.0, 25.0, 25.0);
   [self.activityIndicator sizeToFit];
   self.activityIndicator.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin);
-  self.activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
-  
 
   if (self.isBarStyleLight) {
     self.activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
@@ -59,7 +54,7 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
   
   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.activityIndicator];
   
-  self.webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+  self.webView.frame = self.view.bounds;
   [self.view addSubview:self.webView];
   self.webView.delegate = self;
   self.webView.scalesPageToFit = YES;
@@ -90,6 +85,21 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
   });
 }
 
+- (UIActivityIndicatorView *)activityIndicator {
+  if (_activityIndicator == nil) {
+    _activityIndicator = [[UIActivityIndicatorView alloc] init];
+  }
+  
+  return _activityIndicator;
+}
+
+- (UIWebView *)webView {
+  if (_webView == nil) {
+    _webView = [[UIWebView alloc] init];
+  }
+  
+  return _webView;
+}
 
 - (void)dealloc {
   self.webView.delegate = nil;
