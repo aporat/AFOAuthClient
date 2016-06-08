@@ -20,6 +20,5 @@
 
 + (instancetype)af_dictionaryFromQueryString:(NSString *)queryString;
 - (NSString *)af_queryStringRepresentation;
-+ (instancetype)af_dictionaryFromURL:(NSURL *)url;
 
 @end

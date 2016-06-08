@@ -15,7 +15,7 @@
 //
 
 #import "AFOAuth1ViewController.h"
-#import "NSDictionary+AFOAuthClient.h"
+#import "NSURL+AFOAuthClient.h"
 
 @implementation AFOAuth1ViewController
 
@@ -54,7 +54,7 @@
           
         });
       } else {
-        NSDictionary *result = [NSDictionary af_dictionaryFromQueryString:request.URL.query];
+        NSDictionary *result = [request.URL af_parameters];
         
         dispatch_async(dispatch_get_main_queue(), ^{
           self.completionBlock(YES, nil, result);

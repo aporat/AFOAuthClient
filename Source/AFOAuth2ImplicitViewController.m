@@ -15,7 +15,7 @@
 //
 
 #import "AFOAuth2ImplicitViewController.h"
-#import "NSDictionary+AFOAuthClient.h"
+#import "NSURL+AFOAuthClient.h"
 
 @implementation AFOAuth2ImplicitViewController
 
@@ -58,8 +58,8 @@
           
         });
       } else {
-        NSDictionary *result = [NSDictionary af_dictionaryFromURL:request.URL];
-                
+        NSDictionary *result = [request.URL af_parameters];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
           self.completionBlock(YES, nil, result);
           [self dismissViewControllerAnimated:YES completion:nil];

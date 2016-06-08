@@ -58,38 +58,4 @@
     return [paramArray componentsJoinedByString:@"&"];
 }
 
-+ (instancetype)af_dictionaryFromURL:(NSURL *)url {
-  NSString *queryString = @"";
-  
-  NSRange fragmentStart = [url.absoluteString rangeOfString:@"#"];
-  if (fragmentStart.location != NSNotFound) {
-    queryString = [url.absoluteString substringFromIndex:fragmentStart.location + 1];
-  }
-  
-  NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
-  NSArray *parameters = [queryString componentsSeparatedByString:@"&"];
-  for (NSString *parameter in parameters) {
-    NSArray *parts = [parameter componentsSeparatedByString:@"="];
-    NSString *key = parts[0];
-    if (parts.count > 1) {
-      id value = parts[1];
-      BOOL arrayValue = [key hasSuffix:@"[]"];
-      if (arrayValue) {
-        key = [key substringToIndex:key.length - 2];
-      }
-      
-      id existingValue = dictionary[key];
-      if ([existingValue isKindOfClass:[NSArray class]]) {
-        value = [existingValue arrayByAddingObject:value];
-      } else if (existingValue) {
-        value = existingValue;
-      }
-      
-      dictionary[key] = value;
-    }
-  }
-  
-  return [[[self class] alloc] initWithDictionary:dictionary];
-}
-
 @end

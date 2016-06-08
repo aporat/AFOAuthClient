@@ -15,7 +15,7 @@
 //
 
 #import "AFOWebViewController.h"
-#import "NSDictionary+AFOAuthClient.h"
+#import "NSURL+AFOAuthClient.h"
 
 @implementation AFOWebViewController
 
@@ -53,7 +53,8 @@
       if ([request.URL.absoluteString rangeOfString:@"error"].location != NSNotFound) {
         
         dispatch_async(dispatch_get_main_queue(), ^{
-          NSDictionary *result = [NSDictionary af_dictionaryFromURL:request.URL];
+          
+          NSDictionary *result = [request.URL af_parameters];
           
           NSString *errorMessage = @"Unable to login. try again later.";
           if (result[@"error"]!=nil) {
@@ -66,7 +67,7 @@
           
         });
       } else {
-        NSDictionary *result = [NSDictionary af_dictionaryFromURL:request.URL];
+        NSDictionary *result = [request.URL af_parameters];
         
         dispatch_async(dispatch_get_main_queue(), ^{
           self.completionBlock(YES, nil, result);

@@ -15,22 +15,9 @@
 //
 
 @import Foundation;
-@import UIKit;
-@import AFNetworking;
 
-#ifndef _AFOAUTHCLIENT_
-#define _AFOAUTHCLIENT_
+@interface NSURL (AFOAuthClient)
 
-    #import "AFOAuthViewController.h"
-    #import "AFOAuth2ImplicitViewController.h"
-    #import "AFOAuth1ViewController.h"
-    #import "AFOAuth2ExplicitViewController.h"
-    #import "AFOInstagramImplicitLoginViewController.h"
-    #import "AFOInstagramExplicitViewController.h"
-    #import "AFOWebViewController.h"
-    #import "NSDictionary+AFOAuthClient.h"
-    #import "NSString+AFOAuthClient.h"
-    #import "NSURL+AFOAuthClient.h"
-    #import "UIViewController+AFOAuthClient.h"
+- (NSDictionary <NSString *, NSString *> * __nonnull)af_parameters;
 
-#endif /* _AFOAUTHCLIENT_ */
+@end
