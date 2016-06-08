@@ -56,31 +56,3 @@
 }
 
 @end
-
-
-
-/*
- public func sc_parameters() -> [String : String] {
- var queryString: String?
- let components = NSURLComponents(URL: self, resolvingAgainstBaseURL: false)
- if components?.query == nil {
- queryString = components?.fragment
- } else {
- // If we are here it's was native iOS authorization and we have redirect URL like this:
- // testapp123://foursquare?access_token=ACCESS_TOKEN
- queryString = self.query
- }
- 
- var map = [String : String]()
- 
- if let parameters = queryString?.componentsSeparatedByString("&") {
- for string : String in parameters {
- let keyValue = string.componentsSeparatedByString("=")
- if keyValue.count == 2 {
- map[keyValue[0]] = keyValue[1].sc_urlDecodedString()
- }
- }
- }
- 
- return map
- }*/
