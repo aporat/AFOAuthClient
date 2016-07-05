@@ -54,6 +54,7 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
   
   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.activityIndicator];
   
+  self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
   self.webView.frame = self.view.bounds;
   [self.view addSubview:self.webView];
   self.webView.delegate = self;
