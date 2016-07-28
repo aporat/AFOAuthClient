@@ -67,8 +67,8 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
     [self.webView loadHTMLString:html baseURL:nil];
   }
   
-  if (self.authUrl != nil) {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.authUrl];
+  if (self.authURL != nil) {
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.authURL];
     request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
   
     [self.webView loadRequest:request];

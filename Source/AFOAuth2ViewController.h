@@ -16,13 +16,10 @@
 
 #import "AFOAuthViewController.h"
 
-@interface AFOAuth2ExplicitViewController : AFOAuthViewController
+@interface AFOAuth2ViewController : AFOAuthViewController
 
-+ (instancetype _Nonnull)controllerWithAuthURL:(NSURL *__nullable)authUrl
-                                   redirectURL:(NSURL *__nullable)redirectUrl
-                              loginRedirectURL:(NSURL *__nullable)redirectUrl
-                                      clientId:(NSString *__nullable)clientId
-                                         scope:(NSString *__nullable)scope
++ (instancetype _Nonnull)controllerWithAuthURL:(NSURL *__nullable)authURL
+                                   redirectURL:(NSURL *__nullable)redirectURL
                              completionHandler:(void (^ __nullable)(BOOL success, NSError * __nullable error, NSDictionary <NSString *, id> *__nullable info))handler;
 
 

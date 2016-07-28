@@ -31,7 +31,7 @@
   
   self = [self initWithNibName:nil bundle:nil];
   if (self) {
-    self.authUrl = authUrl;
+    self.authURL = authUrl;
     
     self.redirectURL = redirectUrl;
     self.completionBlock = [handler copy];

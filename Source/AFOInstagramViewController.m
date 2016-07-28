@@ -14,9 +14,9 @@
 // limitations under the License.
 //
 
-#import "AFOInstagramExplicitViewController.h"
+#import "AFOInstagramViewController.h"
 
-@implementation AFOInstagramExplicitViewController
+@implementation AFOInstagramViewController
 
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {

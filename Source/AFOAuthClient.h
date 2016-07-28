@@ -22,11 +22,9 @@
 #define _AFOAUTHCLIENT_
 
     #import "AFOAuthViewController.h"
-    #import "AFOAuth2ImplicitViewController.h"
     #import "AFOAuth1ViewController.h"
-    #import "AFOAuth2ExplicitViewController.h"
-    #import "AFOInstagramImplicitLoginViewController.h"
-    #import "AFOInstagramExplicitViewController.h"
+    #import "AFOAuth2ViewController.h"
+    #import "AFOInstagramViewController.h"
     #import "AFOWebViewController.h"
     #import "NSDictionary+AFOAuthClient.h"
     #import "NSString+AFOAuthClient.h"

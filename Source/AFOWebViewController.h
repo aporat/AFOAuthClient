@@ -18,8 +18,8 @@
 
 @interface AFOWebViewController : AFOAuthViewController
 
-+ (instancetype _Nonnull)controllerWithAuthURL:(NSURL * __nonnull)authUrl
-                          redirectURL:(NSURL *__nonnull)redirectUrl
++ (instancetype _Nonnull)controllerWithAuthURL:(NSURL * __nonnull)authURL
+                          redirectURL:(NSURL *__nonnull)redirectURL
                     completionHandler:(void (^ __nullable)(BOOL success, NSError *__nullable error, NSDictionary<NSString *, id> *__nullable info))handler;
 
 

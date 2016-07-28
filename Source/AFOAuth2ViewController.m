@@ -14,32 +14,26 @@
 // limitations under the License.
 //
 
-#import "AFOAuth2ExplicitViewController.h"
+#import "AFOAuth2ViewController.h"
 #import "NSURL+AFOAuthClient.h"
 
-@implementation AFOAuth2ExplicitViewController
+@implementation AFOAuth2ViewController
 
-+ (instancetype)controllerWithAuthURL:(NSURL *)authUrl
-                          redirectURL:(NSURL *)redirectUrl
-                     loginRedirectURL:(NSURL *)loginRedirectUrl
-                             clientId:(NSString *)clientId
-                                scope:(NSString *)scope
++ (instancetype)controllerWithAuthURL:(NSURL *)authURL
+                          redirectURL:(NSURL *)redirectURL
                     completionHandler:(void (^ __nullable)(BOOL success, NSError * __nullable error, NSDictionary <NSString *, id> *__nullable info))handler {
-  return [[self alloc] initWithAuthURL:authUrl redirectURL:redirectUrl loginRedirectURL:loginRedirectUrl clientId:clientId scope:scope completionHandler:handler];
+  return [[self alloc] initWithAuthURL:authURL redirectURL:redirectURL completionHandler:handler];
 }
 
-- (instancetype)initWithAuthURL:(NSURL *)authUrl
-                    redirectURL:(NSURL *)redirectUrl
-               loginRedirectURL:(NSURL *)loginRedirectUrl
-                       clientId:(NSString *)clientId
-                          scope:(NSString *)scope
+- (instancetype)initWithAuthURL:(NSURL *)authURL
+                    redirectURL:(NSURL *)redirectURL
               completionHandler:(void (^ __nullable)(BOOL success, NSError * __nullable error, NSDictionary <NSString *, id> *__nullable info))handler {
   
   self = [self initWithNibName:nil bundle:nil];
   if (self) {
-    self.authUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@?client_id=%@&redirect_uri=%@&response_type=code&scope=%@", authUrl.absoluteString, clientId, redirectUrl.absoluteString, scope]];
+    self.authURL = authURL;
     
-    self.loginRedirectURL = loginRedirectUrl;
+    self.redirectURL = redirectURL;
     self.completionBlock = [handler copy];
   }
   

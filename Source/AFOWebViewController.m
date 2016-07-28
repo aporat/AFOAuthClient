@@ -19,23 +19,23 @@
 
 @implementation AFOWebViewController
 
-+ (instancetype)controllerWithAuthURL:(NSURL *)authUrl
-                          redirectURL:(NSURL *)redirectUrl
++ (instancetype)controllerWithAuthURL:(NSURL *)authURL
+                          redirectURL:(NSURL *)redirectURL
                     completionHandler:(void (^ __nullable)(BOOL success, NSError *__nullable error, NSDictionary<NSString *, id> *__nullable info))handler {
-  return [[self alloc] initWithAuthURL:authUrl redirectURL:redirectUrl completionHandler:handler];
+  return [[self alloc] initWithAuthURL:authURL redirectURL:redirectURL completionHandler:handler];
 }
 
-- (instancetype)initWithAuthURL:(NSURL *)authUrl
-                    redirectURL:(NSURL *)redirectUrl
+- (instancetype)initWithAuthURL:(NSURL *)authURL
+                    redirectURL:(NSURL *)redirectURL
               completionHandler:(void (^ __nullable)(BOOL success, NSError *__nullable error, NSDictionary<NSString *, id> *__nullable info))handler {
   
   self = [self initWithNibName:nil bundle:nil];
   if (self) {
-    self.authUrl = authUrl;
+    self.authURL = authURL;
     
    //  DDLogDebug(@"loading %@", self.authUrl);
     
-    self.redirectURL = redirectUrl;
+    self.redirectURL = redirectURL;
     self.completionBlock = [handler copy];
   }
   

@@ -23,16 +23,16 @@ extern NSInteger const AFOAuthErrorCodeLoginCanceled;
 
 @interface AFOAuthViewController : UIViewController <UIWebViewDelegate>
 
-@property (nonatomic, strong) void (^ __nullable completionBlock)(BOOL success, NSError * __nullable error, NSDictionary<NSString *, id> *__nullable info);
-@property (nonatomic, strong, nonnull) UIActivityIndicatorView * activityIndicator;
-@property (nonatomic, strong, nonnull) UIWebView * webView;
-@property (nonatomic, strong, nonnull) NSURL * authUrl;
+@property (nonatomic, strong) void (^ __nullable completionBlock)(BOOL success, NSError *__nullable error, NSDictionary<NSString *, id> *__nullable info);
+@property (nonatomic, strong, nonnull) UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong, nonnull) UIWebView *webView;
+@property (nonatomic, strong, nonnull) NSURL *authURL;
 @property (nonatomic, strong, nonnull) NSURL *redirectURL;
 @property (nonatomic, assign) BOOL isBarStyleLight;
 
-@property (nonatomic, strong, nullable) NSString * initialHTMLString;
+@property (nonatomic, strong, nullable) NSString *initialHTMLString;
 
-+ (instancetype _Nonnull)controllerWithCompletionClosure:(void (^ __nullable)(BOOL success, NSError * __nullable error, NSDictionary<NSString *, id> *__nullable info))handler;
++ (instancetype _Nonnull)controllerWithCompletionClosure:(void (^ __nullable)(BOOL success, NSError *__nullable error, NSDictionary<NSString *, id> *__nullable info))handler;
 - (void)dismissAnimated:(__nullable id)sender;
 
 @end
