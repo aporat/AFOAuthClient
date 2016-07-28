@@ -32,7 +32,7 @@
   self = [self initWithNibName:nil bundle:nil];
   if (self) {
     self.authURL = authURL;
-    
+        
     self.redirectURL = redirectURL;
     self.completionBlock = [handler copy];
   }
@@ -46,22 +46,22 @@
   
   if (request.URL != nil) {
     
-    if ([request.URL.absoluteString hasPrefix:self.loginRedirectURL.absoluteString] || [request.URL.absoluteString hasPrefix:@"followers://callback"]) {
+    if ([request.URL.absoluteString hasPrefix:self.redirectURL.absoluteString] || [request.URL.absoluteString hasPrefix:@"followers://callback"]) {
       
       if ([request.URL.absoluteString rangeOfString:@"error"].location != NSNotFound) {
         
         NSDictionary *result = [request.URL af_parameters];
         
-          NSString *errorMessage = @"Unable to login. try again later.";
-          if (result[@"meta"] != nil && result[@"meta"][@"error_message"] != nil) {
-            errorMessage = result[@"meta"][@"error_message"];
-          } else if (result[@"error_message"]!=nil) {
-            errorMessage = result[@"error_message"];
-          } else if (result[@"error"]!=nil) {
-            errorMessage = result[@"error"];
-          }
-          
-          NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:AFOAuthCodeLoginFailed userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
+        NSString *errorMessage = @"Unable to login. try again later.";
+        if (result[@"meta"] != nil && result[@"meta"][@"error_message"] != nil) {
+          errorMessage = result[@"meta"][@"error_message"];
+        } else if (result[@"error_message"]!=nil) {
+          errorMessage = result[@"error_message"];
+        } else if (result[@"error"]!=nil) {
+          errorMessage = result[@"error"];
+        }
+        
+        NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:AFOAuthCodeLoginFailed userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
         
         dispatch_async(dispatch_get_main_queue(), ^{
           self.completionBlock(NO, error, nil);

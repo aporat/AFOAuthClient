@@ -22,8 +22,4 @@
                                    redirectURL:(NSURL *__nullable)redirectURL
                              completionHandler:(void (^ __nullable)(BOOL success, NSError * __nullable error, NSDictionary <NSString *, id> *__nullable info))handler;
 
-
-@property (nonatomic, strong, nullable) NSURL *loginRedirectURL;
-
-
 @end
