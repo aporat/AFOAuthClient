@@ -33,8 +33,6 @@
   if (self) {
     self.authURL = authURL;
     
-   //  DDLogDebug(@"loading %@", self.authUrl);
-    
     self.redirectURL = redirectURL;
     self.completionBlock = [handler copy];
   }
@@ -44,8 +42,6 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
   
-  //DDLogDebug(@"loading %@", request.URL.absoluteString);
-
   if (request.URL!=nil) {
     
     if ([request.URL.absoluteString hasPrefix:self.redirectURL.absoluteString] || [request.URL.absoluteString hasPrefix:@"followers://callback"]) {
