@@ -28,6 +28,9 @@ extern NSInteger const AFOAuthErrorCodeLoginCanceled;
 @property (nonatomic, strong, nonnull) UIWebView *webView;
 @property (nonatomic, strong, nullable) NSURL *authURL;
 @property (nonatomic, strong, nullable) NSURL *redirectURL;
+@property (nonatomic, strong, nullable) UIBarButtonItem *completedBarButtonItem;
+@property (nonatomic, strong, nullable) UIBarButtonItem *refreshBarButtonItem;
+@property (nonatomic, strong, nullable) UIBarButtonItem *activityBarButtonItem;
 @property (nonatomic, assign) BOOL isBarStyleLight;
 
 @property (nonatomic, strong, nullable) NSString *initialHTMLString;

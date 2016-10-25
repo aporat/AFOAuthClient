@@ -40,8 +40,6 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissAnimated:)];
-  
   self.activityIndicator.frame = CGRectMake(0.0, 0.0, 25.0, 25.0);
   [self.activityIndicator sizeToFit];
   self.activityIndicator.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin);
@@ -52,7 +50,16 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
     self.activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
   }
   
-  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.activityIndicator];
+  self.activityBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.activityIndicator];
+  self.refreshBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh:)];
+  
+  if (self.completedBarButtonItem == nil) {
+    self.completedBarButtonItem = self.refreshBarButtonItem;
+  }
+  
+  self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(dismissAnimated:)];
+  self.navigationItem.rightBarButtonItem = self.activityBarButtonItem;
+
   
   self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
   self.webView.frame = self.view.bounds;
@@ -121,9 +128,14 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.activityIndicator];
 }
 
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+  [self.activityIndicator stopAnimating];
+  self.navigationItem.rightBarButtonItem = self.refreshBarButtonItem;
+}
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
   [self.activityIndicator stopAnimating];
-  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh:)];
+  self.navigationItem.rightBarButtonItem = self.completedBarButtonItem;
 
   NSString *response = [webView stringByEvaluatingJavaScriptFromString: @"document.body.innerText"];
   NSData *responseObject = [response dataUsingEncoding:NSUTF8StringEncoding];
