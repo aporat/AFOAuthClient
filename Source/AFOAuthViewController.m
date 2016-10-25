@@ -86,6 +86,15 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
   });
 }
 
+- (void)refresh:(id)sender {
+  if (self.authURL != nil) {
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:self.authURL];
+    request.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+    
+    [self.webView loadRequest:request];
+  }
+}
+
 - (UIActivityIndicatorView *)activityIndicator {
   if (_activityIndicator == nil) {
     _activityIndicator = [[UIActivityIndicatorView alloc] init];
@@ -109,11 +118,12 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
   [self.activityIndicator startAnimating];
-  
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.activityIndicator];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
   [self.activityIndicator stopAnimating];
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh:)];
 
   NSString *response = [webView stringByEvaluatingJavaScriptFromString: @"document.body.innerText"];
   NSData *responseObject = [response dataUsingEncoding:NSUTF8StringEncoding];
