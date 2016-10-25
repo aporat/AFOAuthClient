@@ -34,5 +34,6 @@ extern NSInteger const AFOAuthErrorCodeLoginCanceled;
 
 + (instancetype _Nonnull)controllerWithCompletionClosure:(void (^ __nullable)(BOOL success, NSError *__nullable error, NSDictionary<NSString *, id> *__nullable info))handler;
 - (void)dismissAnimated:(__nullable id)sender;
+- (void)refresh:(__nullable id)sender;
 
 @end

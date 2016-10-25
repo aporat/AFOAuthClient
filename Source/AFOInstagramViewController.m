@@ -18,6 +18,29 @@
 
 @implementation AFOInstagramViewController
 
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+  
+  if (request.URL != nil && [[NSUserDefaults standardUserDefaults] boolForKey:@"kServiceInstagramAuthOverride"] == true) {
+    
+    if ([request.URL.absoluteString isEqualToString:@"https://instagram.com"] ||
+        [request.URL.absoluteString isEqualToString:@"https://instagram.com/"] ||
+        [request.URL.absoluteString isEqualToString:@"https://www.instagram.com"] ||
+        [request.URL.absoluteString isEqualToString:@"https://www.instagram.com/"] ||
+        [request.URL.absoluteString isEqualToString:@"http://instagram.com"] ||
+        [request.URL.absoluteString isEqualToString:@"http://instagram.com/"] ||
+        [request.URL.absoluteString isEqualToString:@"http://www.instagram.com"] ||
+        [request.URL.absoluteString isEqualToString:@"http://www.instagram.com/"]
+        ) {
+      
+      [self refresh:nil];
+      return NO;
+
+    }
+
+  }
+
+  return [super webView:webView shouldStartLoadWithRequest:request navigationType:navigationType];
+}
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
   
