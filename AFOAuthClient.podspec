@@ -16,5 +16,5 @@ AFNetworking Extension for OAuth 1.0a, OAuth 2 explict (server side) and oAuth 2
 
   s.source_files = "Source/*.{m,h}"
 
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking/NSURLSession'
 end
