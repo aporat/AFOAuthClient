@@ -155,7 +155,7 @@ NSInteger const AFOAuthErrorCodeLoginCanceled = -999;
     
     if (errorMessage != nil) {
       NSError *error = [[NSError alloc] initWithDomain:AFOAuthErrorDomain code:AFOAuthCodeLoginFailed userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
-      self.completionBlock(NO, error, nil);
+      if (self.completionBlock != nil) { _completionBlock(NO, error, nil); }
       [self dismissViewControllerAnimated:YES completion:nil];
       
     }
